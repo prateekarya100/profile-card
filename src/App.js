@@ -1,7 +1,7 @@
 import "./App.css";
 import { Avatar } from "./components/Avatar";
 import { Intro } from "./components/Intro";
-import { SkillList } from "./components/SkillList";
+import { Skill } from "./components/Skill";
 
 const skills = [
   { text: "HTML+CSS", color: "#536DFE", emoji: "💪" },
@@ -18,7 +18,7 @@ function App() {
       <Avatar />
       <div className="data">
         <Intro />
-        <SkillList skills={skills} />
+        <Skill skills={skills} />
       </div>
     </div>
   );

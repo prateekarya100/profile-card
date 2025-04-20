@@ -1,4 +1,4 @@
-export function SkillList({ skills }) {
+export function Skill({ skills }) {
   return (
     <div className="skill-list">
       {skills.map((item, index) => (
