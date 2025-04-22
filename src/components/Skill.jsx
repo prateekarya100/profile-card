@@ -1,19 +1,15 @@
 export function Skill({ skills }) {
   return (
     <div className="skill-list">
-      {skills.map((item, index) => (
-        <span
-          key={index}
-          style={{
-            background: item.color,
-            margin: ".2rem",
-            textAlign: "center",
-            borderRadius: "4px",
-          }}
-          className="skill"
-        >
-          {item.text} {item.emoji}
-        </span>
+      {skills.map((item) => (
+        <>
+          <span className="skill" style={{ backgroundColor: `${item.color}` }}>
+            {item.skill}
+            {item.level === "advanced" && "💪"}
+            {item.level === "intermediate" && "👍"}
+            {item.level === "beginner" && "👶"}
+          </span>
+        </>
       ))}
     </div>
   );
